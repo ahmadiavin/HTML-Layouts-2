@@ -26,15 +26,8 @@ body {
     box-sizing: border-box;
     vertical-align: middle;
 }
-.mini {
-    border-radius: 3px;
-    display: inline-block;
-    line-height: 1;
-    overflow: hidden;
-    vertical-align: middle;
-    border-style: none;
-}
-a, a:visited {
+
+a, a:visited{
     color: #fff;
     font-weight: 600;
     white-space: nowrap;
@@ -66,6 +59,15 @@ a, a:visited {
 
 }
 
+.icons { 
+    display: inline-block;
+    fill: currentColor;
+    box-sizing: border-box;
+    color: #fff;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
 .profile {
     padding-right: 16px!important;
     float: left!important;
@@ -83,7 +85,8 @@ a, a:visited {
     border-top-right-radius: 0;
     border: 1px solid gray;
     box-sizing: border-box;
-    display: block;
+    display: flex;
+    flex-direction: column;
     font-size: 14px;
     word-break: break-word;
     white-space: normal;
@@ -94,24 +97,65 @@ a, a:visited {
 }
 .profileImage {
     border: 1px solid #e1e4e8;
-    border-bottom: 0;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
     line-height: 1;
     overflow: hidden;
     vertical-align: middle;
-    height: 100%!important;
-    width: 100%!important;
-    box-sizing: border-box;
-    display: flex;
+    height: 231px!important;
+    width: 231px!important;
+    
+  
     
 }
 
-.setStatus {
-    display: flex;
+.usernameBox {
+    position: static;
+    top: 0;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    box-sizing: border-box;
+    display: block;
+
+}
+.userSpan {
+    color: #666;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    display: block!important;
+    box-sizing: border-box;
+}
+button {
+    -webkit-appearance: button;
+    margin-bottom: 16px!important;
+    margin-top: 8px!important;
+    background-color: #eff3f6;
+    background-image: linear-gradient(-180deg,#fafbfc,#eff3f6 90%);
+    color: #24292e;
+    display: block;
+    text-align: center;
+    width: 100%;
+    background-position: -1px -1px;
+    background-repeat: repeat-x;
+    background-size: 110% 110%;
+    border: 1px solid rgba(27,31,35,.2);
+    border-radius: .25em;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 6px 12px;
+    position: relative;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-transform: none;
+    font: inherit;
+    margin: 0;
+
 }
 
 .main {
@@ -120,5 +164,45 @@ a, a:visited {
     width: 75%;
     box-sizing: border-box;
     display: block;
+}
+.overview {
+    border-bottom-color: #e36209;
+    color: #24292e;
+    font-weight: 600;
+    position: static;
+    background-color: #fff;
+    border-bottom: 1px solid;
+    display: flex;
+    justify-content:space-between;
+}
+
+.repos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    list-style: none;
+    align-items: stretch;
+    align-content: stretch;
+    margin-bottom: 24px!important;
+    box-sizing: border-box;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+
+}
+
+.counter {
+    background-color: rgba(27,31,35,.08);
+    border-radius: 20px;
+    color: #586069;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1;
+    padding: 2px 5px;
+    box-sizing: border-box;
+    text-align: center;
 
 }
